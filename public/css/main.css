@@ -1,3 +1,35 @@
-/*div#display {
+
+div#display {
   font-size: 50px;
-}*/
+  text-align: center;
+  font-family: century gothic;
+  color: white;
+}
+
+div.container {
+  position:absolute;
+  top: 19em;
+  margin:auto;
+}
+
+div.button{
+  margin-top: 7em;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('http://vignette3.wikia.nocookie.net/kirby/images/2/22/KPR_Maxim_Tomato.png/revision/latest?cb=20160417172748&path-prefix=en');
+  background-position: 50% 5em;
+  background-repeat: no-repeat;
+}
+
+span.workCounter {
+  margin-left: 0.2em;
+  margin-right: 2em;
+  font-family: Optima;
+
+}
+span.breakCounter {
+  font-family: Optima;
+
+}
