@@ -5,6 +5,7 @@ var Timer = {
   numberOfBreaks: 0,
   session: 1,
   breakNumber: 0,
+  bell: new Audio('/js/bell.wav'),
   init: function(){
     this.cacheDom();
     this.addListeners();
@@ -24,6 +25,7 @@ var Timer = {
     this.seconds.textContent = this.pad(this.secondsLeft);
     this.break.textContent = `Number of breaks: ${this.breakNumber}`;
     this.work.textContent = `Work session: ${this.session}`;
+    console.log(this.numberOfBreaks);
   },
   addListeners: function(){
     // The bind statement takes the meaning of 'this' from addlisteners and pushes this meaning
@@ -40,10 +42,11 @@ var Timer = {
       this.timer = clearInterval(this.timer);
   },
   reset: function(){
-    if(this.secondsLeft !== 0 && this.minutesLeft !== 0){
+    if(this.secondsLeft !== 0 || this.minutesLeft !== 0){
       this.resetWorkTime();
       this.session = 1;
       this.numberOfBreaks = 0;
+      this.breakNumber = 0;
       this.render();
       this.stop();
       }
@@ -90,18 +93,22 @@ var Timer = {
     this.minutesLeft = 25;
     this.secondsLeft = 0;
     this.session += 1;
-
+    this.bell.play();
   },
   resetBreakTime: function(){
       if(this.numberOfBreaks < 3){
         this.minutesLeft = 5;
-        this.breakNumber =+ 1;
+        this.breakNumber += 1;
+        this.numberOfBreaks += 1;
+        this.bell.play();
       } else {
         this.minutesLeft = 15;
         this.numberOfBreaks = 0;
-        this.breakNumber =+ 1;
+        this.breakNumber += 1;
+        this.bell.play();
       }
       this.secondsLeft = 0;
     }
+
 };
 Timer.init();

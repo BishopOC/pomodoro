@@ -6,10 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ponodomo Tiner</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
 </head>
 <body>
+  <!-- <div id="background">
+    <img src="http://img07.deviantart.net/a301/i/2013/062/b/d/kirby_thumbnail__background_by_smashtoons-d5ww14g.png" alt="">
+  </div> -->
   <div class="container">
     <div class="row">
       <div class="col-xs-3 col-xs-offset-5" id='display'>
@@ -19,17 +22,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-3 col-xs-offset-5 button">
-        <button id='start' class="btn btn-success btn-block">Stert</button>
-        <button id='stop' class="btn btn-danger btn-block">Sterp</button>
-        <button id='reset' class="btn btn-warning btn-block">Resert</button>
-        <span  class="workCounter"></span>
-        <span  class="breakCounter"></span>
-
+      <div class="col-xs-3 col-xs-offset-5 button btnscounter">
+        <div class="buttons">
+          <button id='start' class="btn btn-success btn-block">Stert</button>
+          <button id='stop' class="btn btn-danger btn-block">Sterp</button>
+          <button id='reset' class="btn btn-warning btn-block">Resert</button>
+        </div>
+        <div class='counters'>
+          <span  class="workCounter"></span>
+          <span  class="breakCounter"></span>
+        </div>
       </div>
     </div>
   </div>
-
 <script src="js/app.js"></script>
 </body>
 </html>
