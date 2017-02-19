@@ -18,11 +18,10 @@ div.button{
 body {
   margin: 0;
   padding: 0;
-  background-image: url("http://vignette3.wikia.nocookie.net/kirby/images/2/22/KPR_Maxim_Tomato.png/revision/latest?cb=20160417172748&path-prefix=en"), url("http://img07.deviantart.net/a301/i/2013/062/b/d/kirby_thumbnail__background_by_smashtoons-d5ww14g.png");
-  background-position: 50.4% 2.2em, 0em -2.2em;
+  background-image: url("http://vignette4.wikia.nocookie.net/nintendo/images/1/13/Maxim_Tomato_%28KTD%29.png/revision/latest?cb=20160511001739&path-prefix=en"), url("http://img07.deviantart.net/a301/i/2013/062/b/d/kirby_thumbnail__background_by_smashtoons-d5ww14g.png");
+  background-position: 50.6% 4em, 0em -2.2em;
   background-repeat: no-repeat;
-  background-size: auto, 100em 50em;
-  back
+  background-size: 22em, 100em 50em;
 }
 
 span.workCounter {
