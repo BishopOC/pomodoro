@@ -23,8 +23,8 @@ var Timer = {
   render: function(){
     this.minutes.textContent = this.pad(this.minutesLeft);
     this.seconds.textContent = this.pad(this.secondsLeft);
-    this.break.textContent = `Nermber erf brerks: ${this.breakNumber}`;
-    this.work.textContent = `Werk sersherns: ${this.session}`;
+    this.break.textContent = `Number of breaks: ${this.breakNumber}`;
+    this.work.textContent = `Work sessions: ${this.session}`;
     console.log(this.numberOfBreaks);
   },
   addListeners: function(){
