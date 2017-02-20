@@ -43,10 +43,11 @@ var Timer = {
   },
   reset: function(){
     if(this.secondsLeft !== 0 || this.minutesLeft !== 0){
-      this.resetWorkTime();
-      this.session = 1;
-      this.numberOfBreaks = 0;
-      this.breakNumber = 0;
+      this.minutesLeft = 25,
+      this.secondsLeft = 0,
+      this.session = 1,
+      this.numberOfBreaks = 0,
+      this.breakNumber = 0,
       this.render();
       this.stop();
       }
