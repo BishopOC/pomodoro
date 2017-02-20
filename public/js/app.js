@@ -1,11 +1,11 @@
 var Timer = {
-  minutesLeft: 25,
+  minutesLeft:25,
   secondsLeft: 0,
   isOnBreak: false,
   numberOfBreaks: 0,
   session: 1,
   breakNumber: 0,
-  bell: new Audio('/js/bell.wav'),
+  bell: new Audio('/js/kirby.mp3'),
   init: function(){
     this.cacheDom();
     this.addListeners();
