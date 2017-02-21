@@ -1,6 +1,6 @@
 var Timer = {
-  minutesLeft:25,
-  secondsLeft: 0,
+  minutesLeft:0,
+  secondsLeft: 5,
   isOnBreak: false,
   numberOfBreaks: 0,
   session: 1,
@@ -43,8 +43,8 @@ var Timer = {
   },
   reset: function(){
     if(this.secondsLeft !== 0 || this.minutesLeft !== 0){
-      this.minutesLeft = 25,
-      this.secondsLeft = 0,
+      this.minutesLeft = 0,
+      this.secondsLeft = 5,
       this.session = 1,
       this.numberOfBreaks = 0,
       this.breakNumber = 0,
@@ -91,24 +91,24 @@ var Timer = {
     }
   },
   resetWorkTime: function(){
-    this.minutesLeft = 25;
-    this.secondsLeft = 0;
+    this.minutesLeft = 0;
+    this.secondsLeft = 5;
     this.session += 1;
     this.bell.play();
   },
   resetBreakTime: function(){
       if(this.numberOfBreaks < 3){
-        this.minutesLeft = 5;
+        this.minutesLeft = 0;
         this.breakNumber += 1;
         this.numberOfBreaks += 1;
         this.bell.play();
       } else {
-        this.minutesLeft = 15;
+        this.minutesLeft = 0;
         this.numberOfBreaks = 0;
         this.breakNumber += 1;
         this.bell.play();
       }
-      this.secondsLeft = 0;
+      this.secondsLeft = 3;
     }
 
 };
