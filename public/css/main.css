@@ -12,7 +12,7 @@ body {
   background-image: url("http://i.imgur.com/ZDiqZUT.png"), url("http://img07.deviantart.net/a301/i/2013/062/b/d/kirby_thumbnail__background_by_smashtoons-d5ww14g.png");
   background-position: 50.4% 4em, 0em -2.2em;
   background-repeat: no-repeat;
-  background-size: 22em, 100em 50em;
+  background-size: 22em, cover;
 }
 
 span.workCounter {
